@@ -1,4 +1,5 @@
 // once fetchledik verileri cektik useEffect ile
+// package.json da proxy yazdik "proxy":"http://localhost:3000" gerisinde fetchde yazdik  fetch("/api/workouts/")
 // sonra onu workouts statine gonderdik
 // <WorkoutDetails key={workout._id} workout={workout}/>       propsladik
 
