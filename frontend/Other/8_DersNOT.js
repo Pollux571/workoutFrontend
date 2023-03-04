@@ -1,3 +1,8 @@
+// once fetchledik verileri cektik useEffect ile
+// sonra onu workouts statine gonderdik
+// <WorkoutDetails key={workout._id} workout={workout}/>       propsladik
+
+
 import { useEffect, useState } from "react";
 
 // components
@@ -30,3 +35,27 @@ const Home = () => {
 };
 
 export default Home;
+
+
+// workoutdetails de  workout propsundan faydalanark bunlari workouts verilerini yazdirdik
+
+import React from "react";
+
+const WorkoutDetails = ({ workout }) => {
+  return (
+    <div className="workout-details">
+      <h4>{workout.title}</h4>
+      <p>
+        <strong>Load (kg):</strong>
+        {workout.load}
+      </p>
+      <p>
+        <strong>Reps:</strong>
+        {workout.reps}
+      </p>
+      <p>{workout.createdAt}</p>
+    </div>
+  );
+};
+
+export default WorkoutDetails;
